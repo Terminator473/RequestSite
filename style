@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: gray;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 30%;
+    position: fixed;
+    top: 20px;
+    animation: dropDown ease-in 1s;
+    transition: ease 0.4s;
+    z-index: 9;
+}
+
+.download {
+    
+}
+
+.download-app:active {
+    transform: scale(1.05);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+    background: black;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px gray;
+}
+
+
+
+.card:nth-child(2) {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 320px;
+    width: 290px;
+    right: 55%;
+    top: 120px;
+    border: 3px solid white;
+    background: black;
+    box-shadow: 2px 2px 10px black;
+}
+.card:nth-child(3) {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 520px;
+    width: 290px;
+    left: 55%;
+    top: 150px;
+    border: 3px solid white;
+    background: black;
+    box-shadow: 2px 2px 10px black;
+}
+
+.card:nth-child(4) {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 320px;
+    width: 290px;
+    right: 55%;
+    top: 500px;
+    border: 3px solid white;
+    background: black;
+    box-shadow: 2px 2px 10px black;
+}
+
+.experience {
+    
+}
+
+.about {
+    
+}
+
+.goals {
+    
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.workTitle {
+    text-align: center;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+    width: 50%;
+}
+
+.workParagraph {
+    text-align: center;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+    width: 45%
+}
+
+.meTitle {
+    text-align: center;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.formText {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.formText:nth-child(1):active {
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 20px;
+}
+
+.formLabel {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.sendButton {
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+}
+
+@keyframes dropDown {
+    from {
+        top: -25%;
+    }
+    to {
+        top: 20px;
+    }
+}
+
+
