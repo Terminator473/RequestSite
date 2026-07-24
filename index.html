@@ -18,14 +18,16 @@
 
     <div id="form" class="form">
         <h1 class="request">Request Work</h1>
-        <label class="formLabel">
-            <input id="firstName" type="text" placeHolder="First Name" class="formText">
-            <input id="lastName" type="text" placeHolder="Last Name" class="formText">
-            <input id="email" type="text" placeHolder="Email" class="formText">
-            <input id="phone" type="text" placeHolder="Phone" class="formText">
-            <input id="typeOfWork" type="text" placeHolder="Type of work" class="formText">
-            <input id="send" type="button" class="sendButton" value="Send Request" onclick="sendRequest()">
-        </label>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="d293dd32-475a-4d7d-a5d7-8fa415cef91a">
+            <label>
+                <input type="text" placeholder="First Name" name="firstName" required>
+                <input type="text" placeholder="Last Name" name="lastName" required>
+                <input type="email" placeholder="Email Address" name="email" required>
+                <input type="text" placeholder="Phone Number" name="phoneNumber" required>
+                <input type="submit" value="Submit">
+            </label>
+        </form>
     </div>
 </body>
 </html>
