@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Work Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="experience" class="experience">
+        <h1 class="workTitle">My Specialty</h1>
+        <p class="workParagraph">I have worked in the AV technician field for 3 years, with experience in hanging TV's and soundbars!
+        Provided that you have the mounts, I can do this for you!</p>
+    </div>
+
+    <div id="aboutMe" class="aboutMe">
+        <h1 class="meTitle">About Me</h1>
+    </div>
+
+    <div id="form" class="form">
+        <h1 class="request">Request Work</h1>
+        <label class="formLabel">
+            <input id="firstName" type="text" placeHolder="First Name" class="formText">
+            <input id="lastName" type="text" placeHolder="Last Name" class="formText">
+            <input id="email" type="text" placeHolder="Email" class="formText">
+            <input id="phone" type="text" placeHolder="Phone" class="formText">
+            <input id="typeOfWork" type="text" placeHolder="Type of work" class="formText">
+            <input id="send" type="button" class="sendButton" value="Send Request" onclick="sendRequest()">
+        </label>
+    </div>
+</body>
+</html>
